@@ -1,5 +1,7 @@
 ## TL;DR
 
+[![OGTO Demo](ogto.jpg)](https://www.youtube.com/watch?v=UyfE3nazP_I)
+
 I built **OGTO** (Open Goal-Task Orchestrator), an AI research agent that:
 
 - 🔍 Searches Google for your research topic

@@ -1,5 +1,7 @@
 # OGTO — Open Goal-Task Orchestrator
 
+[![OGTO Demo](ogto.jpg)](https://www.youtube.com/watch?v=UyfE3nazP_I)
+
 > Build, execute, and monitor AI research agents in real time.
 
 OGTO is a **goal-oriented AI agent framework** that executes autonomous web research using the LOOP strategy. Define a goal, and OGTO searches, fetches, summarizes, and synthesizes information until the research objective is satisfied.
