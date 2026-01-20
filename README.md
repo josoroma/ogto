@@ -1,10 +1,12 @@
 # OGTO — Open Goal-Task Orchestrator
 
-[![OGTO Demo](ogto.jpg)](https://www.youtube.com/watch?v=UyfE3nazP_I)
-
 > Build, execute, and monitor AI research agents in real time.
 
 OGTO is a **goal-oriented AI agent framework** that executes autonomous web research using the LOOP strategy. Define a goal, and OGTO searches, fetches, summarizes, and synthesizes information until the research objective is satisfied.
+
+### YouTube Video:
+
+[![OGTO Demo](ogto.jpg)](https://www.youtube.com/watch?v=UyfE3nazP_I)
 
 ## Key Features
 
@@ -518,7 +520,7 @@ OGTO uses PostgreSQL (via Supabase) with pgvector for semantic search. The schem
 │ │ text   │ │ rationale│          │ agent_state_id (FK) │───────┘            │
 │ │ tags   │ │ tool_name│          │ observation_id      │                    │
 │ │ source │ │ args     │          │ statement           │                    │
-│ │embedding│ │ success_ │          │ heuristic_confidence│                   │
+│ │embedding││ success_ │          │ heuristic_confidence│                    │
 │ │(vector)│ │  criteria│          │ llm_confidence      │                    │
 │ └────────┘ └────┬─────┘          │ blended_confidence  │                    │
 │                 │ 1              └─────────────────────┘                    │
@@ -551,17 +553,17 @@ OGTO uses PostgreSQL (via Supabase) with pgvector for semantic search. The schem
 │                 │ 1                                                         │
 │                 │                                                           │
 │                 ▼ N                                                         │
-│          ┌─────────────┐                                                    │
-│          │ reflection  │  Goal satisfaction evaluation                      │
-│          │─────────────│                                                    │
-│          │ id (PK)     │                                                    │
-│          │observation_ │                                                    │
-│          │   id        │                                                    │
-│          │ critique    │                                                    │
-│          │ decision    │                                                    │
-│          │goal_satisfied                                                    │
-│          │ memory_note │                                                    │
-│          └─────────────┘                                                    │
+│          ┌──────────────┐                                                   │
+│          │ reflection   │  Goal satisfaction evaluation                     │
+│          │──────────────│                                                   │
+│          │ id (PK)      │                                                   │
+│          │observation_  │                                                   │
+│          │   id         │                                                   │
+│          │ critique     │                                                   │
+│          │ decision     │                                                   │
+│          │goal_satisfied│                                                   │
+│          │ memory_note  │                                                   │
+│          └──────────────┘                                                   │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
