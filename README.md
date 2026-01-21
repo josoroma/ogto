@@ -47,7 +47,7 @@ OGTO is a **goal-oriented AI agent framework** that executes autonomous web rese
 
 ```bash
 git clone <repository-url>
-cd og2
+cd ogto
 npm install
 ```
 
